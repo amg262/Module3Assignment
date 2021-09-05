@@ -28,15 +28,20 @@ namespace Module3Assignment
             return totalPoints;
         }
         
-        static double Steps(double steps)
-        {
-            return 0;
-        }
         
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            double numDays = 0;
+            double yogaClasses = 0;
+            double aerobicsClasses = 0;
+            double weeklyNutrition = 0;
+            double monthlyPoints = 0;
+            double giftCardsEarned = 0;
+
+            
+
         }
     }
 }

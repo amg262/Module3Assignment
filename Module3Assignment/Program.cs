@@ -26,10 +26,10 @@ namespace Module3Assignment
 
             if (classes >= 6 || classes <= 11)
             {
-                totalPoints += classes * 10;
+                totalPoints += 10;
             } else if (classes >= 12)
             {
-                totalPoints += classes * 30;
+                totalPoints += 30;
             }
             else
             {
@@ -44,10 +44,10 @@ namespace Module3Assignment
 
             if (classes >= 6 || classes <= 11)
             {
-                totalPoints += classes * 20;
+                totalPoints += 20;
             } else if (classes >= 12)
             {
-                totalPoints += classes * 50;
+                totalPoints += 50;
             }
             else
             {
@@ -62,10 +62,10 @@ namespace Module3Assignment
 
             if (classes >= 1 || classes <= 3)
             {
-                totalPoints += classes * 10;
+                totalPoints += 10;
             } else if (classes == 4)
             {
-                totalPoints += classes * 30;
+                totalPoints += 30;
             }
             else if (classes > 4)
             {
@@ -88,7 +88,7 @@ namespace Module3Assignment
             double aerobicsClasses = 0;
             double weeklyNutrition = 0;
             double monthlyPoints = 0;
-            double giftCardsEarned = 0;
+            int giftCardsEarned = 0;
 
             Console.WriteLine("Number of days with at least 10,000 steps>");
             Double.TryParse(Console.ReadLine(), out tenThouSteps);
@@ -105,7 +105,7 @@ namespace Module3Assignment
             monthlyPoints += Aerobics(aerobicsClasses);
             monthlyPoints += Nutrition(weeklyNutrition);
 
-            giftCardsEarned = monthlyPoints / 50;
+            giftCardsEarned = Convert.ToInt32(monthlyPoints) / 50;
 
             Console.WriteLine($"{tenThouSteps} 10k step days > Pts: {monthlyPoints} > Cards: {giftCardsEarned}");
             Console.WriteLine($"{yogaClasses} yoga classes > Pts: {monthlyPoints} > Cards: {giftCardsEarned}");

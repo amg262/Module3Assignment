@@ -17,6 +17,7 @@ namespace Module3Assignment
                 totalPoints = 0;
             }
 
+            Console.WriteLine(totalPoints);
             return totalPoints;
         }
         
@@ -24,17 +25,16 @@ namespace Module3Assignment
         {
             double totalPoints = 0;
 
-            if (classes >= 6 || classes <= 11)
+            if (classes >= 6 && classes <= 11)
             {
                 totalPoints += 10;
             } else if (classes >= 12)
             {
                 totalPoints += 30;
             }
-            else
-            {
-                totalPoints = 0;
-            }
+      
+            Console.WriteLine(totalPoints);
+
             return totalPoints;
         }
         
@@ -42,17 +42,16 @@ namespace Module3Assignment
         {
             double totalPoints = 0;
 
-            if (classes >= 6 || classes <= 11)
+            if (classes >= 6 && classes <= 11)
             {
                 totalPoints += 20;
             } else if (classes >= 12)
             {
                 totalPoints += 50;
             }
-            else
-            {
-                totalPoints = 0;
-            }
+        
+            Console.WriteLine(totalPoints);
+
             return totalPoints;
         }
         
@@ -60,21 +59,20 @@ namespace Module3Assignment
         {
             double totalPoints = 0;
 
-            if (classes >= 1 || classes <= 3)
+            if (classes >= 1 && classes <= 3)
             {
                 totalPoints += 10;
             } else if (classes == 4)
             {
                 totalPoints += 30;
             }
-            else if (classes > 4)
+            else if (classes >= 4)
             {
-                totalPoints = 4 * 30;
+                totalPoints = 40;
             }
-            else
-            {
-                totalPoints = 0;
-            }
+            
+            Console.WriteLine(totalPoints);
+
             return totalPoints;
         }
         

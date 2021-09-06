@@ -17,10 +17,9 @@ namespace Module3Assignment
                 totalPoints = 0;
             }
 
-            Console.WriteLine(totalPoints);
             return totalPoints;
         }
-        
+
         static double Yoga(double classes)
         {
             double totalPoints = 0;
@@ -28,16 +27,15 @@ namespace Module3Assignment
             if (classes >= 6 && classes <= 11)
             {
                 totalPoints += 10;
-            } else if (classes >= 12)
+            }
+            else if (classes >= 12)
             {
                 totalPoints += 30;
             }
-      
-            Console.WriteLine(totalPoints);
 
             return totalPoints;
         }
-        
+
         static double Aerobics(double classes)
         {
             double totalPoints = 0;
@@ -45,16 +43,15 @@ namespace Module3Assignment
             if (classes >= 6 && classes <= 11)
             {
                 totalPoints += 20;
-            } else if (classes >= 12)
+            }
+            else if (classes >= 12)
             {
                 totalPoints += 50;
             }
-        
-            Console.WriteLine(totalPoints);
 
             return totalPoints;
         }
-        
+
         static double Nutrition(double classes)
         {
             double totalPoints = 0;
@@ -62,25 +59,20 @@ namespace Module3Assignment
             if (classes >= 1 && classes <= 3)
             {
                 totalPoints += 10;
-            } else if (classes == 4)
-            {
-                totalPoints += 30;
             }
             else if (classes >= 4)
             {
                 totalPoints = 40;
             }
-            
+
             Console.WriteLine(totalPoints);
 
             return totalPoints;
         }
-        
-        
+
 
         static void Main(string[] args)
         {
-
             double tenThouSteps = 0;
             double yogaClasses = 0;
             double aerobicsClasses = 0;
@@ -105,16 +97,13 @@ namespace Module3Assignment
 
             giftCardsEarned = Convert.ToInt32(monthlyPoints) / 50;
 
-            Console.WriteLine($"{tenThouSteps} 10k step days > Pts: {monthlyPoints} > Cards: {giftCardsEarned}");
-            Console.WriteLine($"{yogaClasses} yoga classes > Pts: {monthlyPoints} > Cards: {giftCardsEarned}");
-            Console.WriteLine($"{aerobicsClasses} aerobics classes > Pts: {monthlyPoints} > Cards: {giftCardsEarned}");
-            Console.WriteLine($"{weeklyNutrition} meetings > Pts: {monthlyPoints} > Cards: {giftCardsEarned}");
-            
-            
+            Console.WriteLine($"{tenThouSteps} 10k step days");
+            Console.WriteLine($"{yogaClasses} yoga classes");
+            Console.WriteLine($"{aerobicsClasses}");
+            Console.WriteLine($"{weeklyNutrition}");
 
-
-
-
+            Console.WriteLine($"Monthly Points:  {monthlyPoints}");
+            Console.WriteLine($"Gift cards:     {giftCardsEarned}");
         }
     }
 }
